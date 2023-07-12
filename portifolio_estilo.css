@@ -336,6 +336,12 @@ main .titulo_projetos{
     font-weight: bolder;
 }
 
+@media(max-width:857px){
+    .Sobre_mim #foto_perfil img{
+        animation: none;
+    }
+}
+
 @media(max-width:835px){
     .Projetos .flex_container figure img:hover{
         animation: none;
@@ -354,6 +360,7 @@ main .titulo_projetos{
 
 @media(max-width:480px){
     .Sobre_mim #foto_perfil img{
-        max-width: 90%;
+        width: 300px;
+        height: 300px;
     }
 }
