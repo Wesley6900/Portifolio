@@ -259,6 +259,52 @@ main .titulo_projetos{
     margin-bottom: 10px;
 }
 
+.titulo_hora{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.hora_atual{
+    text-align: center;
+}
+
+.pontuacao{
+    font-size: 40px;
+    color: #3d3d3d;
+}
+
+#relogio_real,
+#minutos_real,
+#segundos_real{
+    margin: 5px;
+    font-size: 24px;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+.dia_noite{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#alternar_img{
+    overflow: hidden;
+    width: 30px;
+}
+
+.hora_atual .dia_noite #alternar_img figure{
+    display: flex;
+    margin-right: -30px;
+}
+
+.hora_atual .dia_noite #alternar_img figure img{
+    width: 30px;
+    height: 30px;
+}
+
 
 #Contato{
     background: #000658;
