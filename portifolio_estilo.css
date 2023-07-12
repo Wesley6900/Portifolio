@@ -126,12 +126,15 @@ header h1{
 }
 
 .Sobre_mim p{
-    font-size: 20px;
-    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.5;
 }
 
 .Sobre_mim p strong{
-    color: #000000;
+    color: #ff0000;
     font-weight: bolder;
 }
 
@@ -145,8 +148,11 @@ header h1{
 
 .Sobre_mim #foto_perfil img{
     max-width: 400px;
+    height: 400px;
     border-radius: 100%;
     border: 2px solid rgb(0, 31, 206);
+    margin-bottom: 20px;
+    animation: balao infinite 2s;
 }
 
 .Sobre_mim #foto_perfil figcaption{
@@ -155,6 +161,7 @@ header h1{
 }
 
                                     /**/
+
 .redes_sociais .contato_principal{
     margin-top: 30px;
     text-align: center;
@@ -171,11 +178,15 @@ header h1{
 
 .redes_sociais nav figure{
     text-align: center;
-
 }
 
 .redes_sociais img{
     width: 40px;
+}
+
+.redes_sociais img:hover{
+    transition: 2s;
+    margin-top: -5px;
 }
 
                                     /*Projetos fotos*/
