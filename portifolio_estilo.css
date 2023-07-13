@@ -45,7 +45,10 @@ header h1{
 .box_header nav ul li{
     font-weight: bolder;
     font-size: 18px;
+
+    border-left: 2px solid #fff;
 }
+
 
                                             /*aside*/
 .aside_barra{
@@ -60,13 +63,14 @@ header h1{
 
 .aside_barra label i:hover{
     background: #dfdfdf38;
+    padding: 5px;
     border-radius: 100%;
 }
 
 .aside_barra .z_index aside{
-    transition: 2s;
+    transition: 1s;
     margin-top: 20px;
-    margin-right: -400px;
+    margin-right: -80%;
     position: absolute;
     right: 0;
 }
@@ -82,7 +86,7 @@ header h1{
 .aside_barra .z_index aside ul li a{
     color: #fff;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 50px 10px 30px;
 }
 
 .aside_barra .z_index aside ul li:hover{
@@ -145,7 +149,8 @@ header h1{
     background: #fff;
     padding: 20px 20px 0;
     border-radius: 20px;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #ebebeb;
+    border-radius: 0 20px 0 20px;
 }
 
 .Sobre_mim #foto_perfil img{
@@ -160,7 +165,12 @@ header h1{
 .Sobre_mim #foto_perfil figcaption{
     text-align: center;
     font-size: 20px;
+    font-family: monospace;
     padding-bottom: 20px;
+}
+
+.Sobre_mim #foto_perfil figcaption p{
+    font-family: monospace;
 }
 
                                     /**/
@@ -284,27 +294,9 @@ main .titulo_projetos{
     margin-bottom: 60px;
 }
 
-.dia_noite{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
+.hora_atual div{
+    margin-bottom: 30px;
 }
-
-#alternar_img{
-    overflow: hidden;
-    width: 30px;
-}
-
-.hora_atual .dia_noite #alternar_img figure{
-    display: flex;
-    margin-right: -30px;
-}
-
-.hora_atual .dia_noite #alternar_img figure img{
-    width: 30px;
-    height: 30px;
-}
-
 
 #Contato{
     background: #000658;
@@ -369,7 +361,7 @@ main .titulo_projetos{
 
 @media(max-width:480px){
     .Sobre_mim #foto_perfil img{
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 }
