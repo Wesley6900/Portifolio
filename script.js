@@ -2,16 +2,16 @@ var hora_real = window.document.getElementById('relogio_real');
 var minutos_real = window.document.getElementById('minutos_real');
 var segundos_real = window.document.getElementById('segundos_real');
 
-var alternar = window.document.getElementById('alterar');
-
 function hora_atualizador() {
-    var hora = new Date;
-    hora = hora.getHours()
+    var color_pagina = window.document.getElementById('body_color');
 
-    var minutos = new Date;
+    var hora = new Date();
+    hora = hora.getHours();
+
+    var minutos = new Date();
     minutos = minutos.getMinutes();
 
-    var segundos = new Date;
+    var segundos = new Date();
     segundos = segundos.getSeconds();
 
     hora_real.innerHTML = hora;
@@ -29,11 +29,19 @@ function hora_atualizador() {
         minutos_real.innerHTML = minutos;
     }
 
+    if (hora < 10) {
+        hora_real.innerHTML = '0' + hora;
+    }else{
+        hora_real.innerHTML = hora;
+    }
+
 
     if (hora > 4 && hora < 18) {
-        alternar.style.marginRight = '-30px';
-    }else if(hora > 18 && hora < 5){
-        alternar.style,marginRight = '0px';
+        document.getElementsByClassName('img_alternation')[0].innerHTML = '<img src="https://i.pinimg.com/originals/d8/dc/3a/d8dc3a2fd41076ec9e52eea65ac62da0.png" alt="Dia" width = "50px">'
+
+    }else{
+        document.getElementsByClassName('img_alternation')[0].innerHTML = '<img src="https://i0.wp.com/imagensemoldes.com.br/wp-content/uploads/2020/05/Desenho-Lua-PNG.png?fit=500%2C500&ssl=1" alt="Lua" width = "50px">'
+        
     }
 }
 
